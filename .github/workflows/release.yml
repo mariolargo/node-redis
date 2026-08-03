@@ -22,11 +22,6 @@ jobs:
       - name: Install Dependencies
         run: cd backend && npm ci
       - name: Run Semantic Release
-        run: |
-          git fetch --all
-          git reset --hard origin/main
-          git pull origin main
-          cd backend
-          npx semantic-release
+        run: cd backend && npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

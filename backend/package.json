@@ -16,16 +16,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mariolargo/nodejs-app.git"
+    "url": "git+https://github.com/mariolargo/node-redis.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/mariolargo/nodejs-app/issues"
+    "url": "https://github.com/mariolargo/node-redis.git/issues"
   },
-  "homepage": "https://github.com/mariolargo/nodejs-app#readme",
+  "homepage": "https://github.com/mariolargo/node-redis.git#readme",
   "dependencies": {
     "express": "^5.2.1",
     "redis": "^6.1.0",
