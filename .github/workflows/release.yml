@@ -20,13 +20,13 @@ jobs:
         with:
           fetch-depth: 0 # Required to parse git history
       - name: Install Dependencies
+        run: cd backend && npm ci
+      - name: Run Semantic Release
         run: |
           git fetch --all
           git reset --hard origin/main
           git pull origin main
           cd backend
-          npm ci
-      - name: Run Semantic Release
-        run: cd backend && npx semantic-release
+          npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
