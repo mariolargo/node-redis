@@ -2,8 +2,6 @@ name: CD - Elastic Beanstalk Production
 
 on:
   push:
-    #branches:
-    #  - develop
     tags:
       - "v*.*.*"
 

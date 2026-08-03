@@ -14,6 +14,8 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
+// Este es un cambio para checar Semantic Release
+
 app.get('/character', async (req, res) => {
   try {
     const cache = await client.get('characters')
